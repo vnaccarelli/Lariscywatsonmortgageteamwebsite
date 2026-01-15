@@ -65,10 +65,10 @@ export function AreasWeServe({ onNavigateToArea }: { onNavigateToArea?: (slug: s
               whileHover={{
                 scale: 1.02,
                 boxShadow: "0 10px 25px rgba(15, 23, 42, 0.08)",
-              }}
-              transition={{
-                duration: 0.15,
-                ease: [0.16, 1, 0.3, 1],
+                transition: {
+                  duration: 0.15,
+                  ease: [0.16, 1, 0.3, 1],
+                },
               }}
               onClick={() => handleCardClick(area.slug)}
               className="p-5 bg-white border border-[var(--border)] rounded-xl cursor-pointer"
